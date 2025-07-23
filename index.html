@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marchena Asesores | Tu Solución Legal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter (as fallback, Helvetica is preferred) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Helvetica font stack */
+            background-color: #f8f8f8; /* Blanco muy claro */
+        }
+        /* Definición del azul principal extraído del logo */
+        .bg-primary-dark {
+            background-color: #265A8C; /* Azul extraído del logo */
+        }
+        .text-primary-dark {
+            color: #265A8C; /* Azul extraído del logo */
+        }
+        /* Ajuste para el hover de los botones (un tono más oscuro del azul principal) */
+        .hover\:bg-dark-blue-hover:hover {
+            background-color: #1a4266; /* Tono más oscuro para el hover */
+        }
+        /* Estilos para el calendario y entradas */
+        input[type="date"],
+        input[type="number"],
+        button {
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #cbd5e0;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #4a5568;
+            background-color: #ffffff;
+            transition: all 0.2s ease-in-out;
+        }
+        input[type="date"]:focus,
+        input[type="number"]:focus,
+        button:focus {
+            outline: none;
+            border-color: #265A8C; /* Azul principal */
+            box-shadow: 0 0 0 3px rgba(38, 90, 140, 0.25); /* Sombra azul principal */
+        }
+        button {
+            cursor: pointer;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary-dark">Marchena Asesores</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-gray-600 hover:text-primary-dark font-medium">Quiénes Somos</a></li>
+                    <li><a href="#services" class="text-gray-600 hover:text-primary-dark font-medium">Servicios</a></li>
+                    <li><a href="#calculator" class="text-gray-600 hover:text-primary-dark font-medium">Calculadora de Términos</a></li>
+                    <li><a href="#contact" class="bg-primary-dark text-white px-4 py-2 rounded-lg shadow-md hover:bg-dark-blue-hover transition duration-300 font-semibold">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (with Logo) -->
+    <section class="bg-white py-20 text-center">
+        <div class="container mx-auto px-6">
+            <!-- Logo Image from uploaded file: LOGO.JPG -->
+            <img src="LOGO.JPG" alt="Logo Marchena Asesores" class="mx-auto mb-8 rounded-lg shadow-md max-w-xs h-auto">
+            <h1 class="text-5xl font-extrabold text-primary-dark mb-4 leading-tight">Expertos en Derecho, Su Confianza Nuestra Prioridad</h1>
+            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">Ofrecemos asesoría legal integral y representación efectiva para individuos y empresas.</p>
+            <a href="#contact" class="bg-primary-dark text-white px-8 py-3 rounded-lg shadow-lg hover:bg-dark-blue-hover transition duration-300 font-semibold text-lg">Contáctenos Hoy</a>
+        </div>
+    </section>
+
+    <!-- About Us Section (Quiénes Somos) -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-primary-dark mb-6">Quiénes Somos</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    En MARCHENA ASESORES Y CONSULTORES S.A.S., somos una organización con más de 10 años de experiencia dedicada a la consultoría y asesoría en la gestión integral de los procesos administrativos de las organizaciones; conformada por profesionales en áreas del Derecho, Psicología, Seguridad y Salud en el Trabajo, y Nómina.
+                </p>
+                <p class="text-lg text-gray-700">
+                    Hemos trabajado, desde el sector legal, en un gran número de casos en Derecho Laboral, y hemos realizado asesorías en procesos de contratación estatal con un porcentaje de favorabilidad del 100%.
+                </p>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-xl">
+                <!-- Image for "Oficina Marchena" from uploaded file: IMG_4077.jpg -->
+                <img src="IMG_4077.jpg" alt="Edificio de Oficina Marchena Asesores" class="w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h1 class="text-4xl font-bold text-primary-dark mb-10 text-center">Nuestros Servicios Detallados</h1>
+
+            <div class="p-8 rounded-xl shadow-lg mb-8 bg-white">
+                <h2 class="text-3xl font-semibold text-primary-dark mb-4">Asesoría Jurídica</h2>
+                <p class="text-lg text-gray-700 mb-4">Transversalmente te asesoramos en las siguientes áreas:</p>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 ml-4">
+                    <li>Procesos disciplinarios</li>
+                    <li>Administración de fueros</li>
+                    <li>Atención de demandas, tutelas, requerimientos de Ministerio de Trabajo</li>
+                    <li>Contratos comerciales</li>
+                    <li>Accidentes laborales</li>
+                    <li>Tercerización</li>
+                    <li>Manejo de relaciones colectivas</li>
+                </ul>
+            </div>
+
+            <div class="p-8 rounded-xl shadow-lg mb-8 bg-white">
+                <h2 class="text-3xl font-semibold text-primary-dark mb-4">Procesos de Contratación</h2>
+                <p class="text-lg text-gray-700 mb-4">Pública y privada.</p>
+                <h3 class="text-2xl font-semibold text-primary-dark mb-2">Ministerio</h3>
+                <p class="text-lg text-gray-700">Las gestiones necesarias que se tengan que llevar a cabo frente al Ministerio de Trabajo.</p>
+            </div>
+
+            <div class="p-8 rounded-xl shadow-lg mb-8 bg-white">
+                <h2 class="text-3xl font-semibold text-primary-dark mb-4">Gestión del Talento Humano</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 ml-4">
+                    <li>Selección y contratación de personal</li>
+                    <li>Liquidación de nómina y seguridad social integral</li>
+                    <li>Capacitaciones</li>
+                    <li>Visitas domiciliarias</li>
+                </ul>
+            </div>
+
+            <div class="p-8 rounded-xl shadow-lg mb-8 bg-white">
+                <h2 class="text-3xl font-semibold text-primary-dark mb-4">Sistemas de Gestión</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 ml-4">
+                    <li>SG-SST</li>
+                    <li>SG- CALIDAD</li>
+                    <li>Auditorías internas</li>
+                </ul>
+            </div>
+
+            <div class="p-8 rounded-xl shadow-lg bg-white">
+                <h2 class="text-3xl font-semibold text-primary-dark mb-4">Servicios complementarios - Marchena Integral</h2>
+                <p class="text-lg text-gray-700 mb-4">Asesorías enfocadas en otras áreas que se alejan del Derecho Laboral y de la Contratación Estatal y que se mantienen dentro de la esfera de la protección y la administración corporativa tales como:</p>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 ml-4">
+                    <li>Derecho societario</li>
+                    <li>Derecho corporativo</li>
+                    <li>Derecho comercial</li>
+                    <li>Derecho Civil</li>
+                </ul>
+                <p class="text-lg text-gray-700 mt-4">Estamos comprometidos en brindar a nuestros clientes un servicio transversal, diversificado y humano, basado en la protección a nuestros clientes de los riesgos jurídicos y las dificultades que la administración del talento humano implican.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Term Calculator Section -->
+    <section id="calculator" class="py-16 bg-primary-dark text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-10">Calculadora de Términos Legales</h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg max-w-xl mx-auto text-gray-800">
+                <p class="mb-6">
+                    Ingrese la fecha de notificación y los días hábiles para calcular la fecha de vencimiento del término legal.
+                    Recuerde que el conteo inicia el día siguiente a la notificación y solo considera días hábiles.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="text-left">
+                        <label for="notificationDate" class="block text-gray-700 text-sm font-bold mb-2">Fecha de Notificación:</label>
+                        <input type="date" id="notificationDate" class="w-full">
+                    </div>
+                    <div class="text-left">
+                        <label for="businessDays" class="block text-gray-700 text-sm font-bold mb-2">Días Hábiles:</label>
+                        <input type="number" id="businessDays" min="1" value="10" class="w-full">
+                    </div>
+                </div>
+                <button onclick="calculateTerm()" class="w-full bg-primary-dark text-white py-3 rounded-lg hover:bg-dark-blue-hover transition duration-300 font-semibold">Calcular Fecha de Vencimiento</button>
+                <div id="result" class="mt-8 p-4 bg-gray-50 rounded-lg text-lg font-semibold hidden">
+                    <p>La fecha de vencimiento es: <span id="expirationDate" class="text-primary-dark"></span></p>
+                    <p id="holidayWarning" class="text-red-500 text-sm mt-2 hidden">
+                        *Tenga en cuenta que la lista de días festivos puede no ser exhaustiva. Verifique con el calendario oficial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-primary-dark mb-10">Contáctenos</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                Estamos aquí para ayudarle. Llene el formulario a continuación o contáctenos directamente.
+            </p>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <form action="mailto:danielmarchenaa@gmail.com" method="post" enctype="text/plain">
+                    <div class="mb-6 text-left">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 rounded-md border border-gray-300 focus:ring-primary-dark focus:border-primary-dark" placeholder="Su Nombre Completo">
+                    </div>
+                    <div class="mb-6 text-left">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" class="w-full p-3 rounded-md border border-gray-300 focus:ring-primary-dark focus:border-primary-dark" placeholder="su.email@ejemplo.com">
+                    </div>
+                    <div class="mb-6 text-left">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" class="w-full p-3 rounded-md border border-gray-300 focus:ring-primary-dark focus:border-primary-dark" placeholder="Describa su consulta..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary-dark text-white py-3 rounded-lg hover:bg-dark-blue-hover transition duration-300 font-semibold">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div class="mt-10 text-gray-700">
+                <p><strong>Teléfono:</strong> +57 (312) 710-7669</p>
+                <p><strong>Email:</strong> info@marchenaasesores.com</p>
+                <p><strong>Dirección:</strong> Calle 123 #45-67, Bogotá, Colombia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Marchena Asesores. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white">Política de Privacidad</a>
+                <a href="#" class="text-gray-400 hover:text-white">Términos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Term Calculator Logic ---
+
+        // Define Colombian public holidays (YYYY-MM-DD format)
+        // This list should be updated annually and comprehensively for production use.
+        const holidays = [
+            "2025-01-01", // Año Nuevo
+            "2025-01-06", // Día de Reyes Magos
+            "2025-03-24", // Día de San José
+            "2025-04-17", // Jueves Santo
+            "2025-04-18", // Viernes Santo
+            "2025-05-01", // Día del Trabajo
+            "2025-06-02", // Día de la Ascensión
+            "2025-06-23", // Corpus Christi
+            "2025-06-30", // Sagrado Corazón de Jesús
+            "2025-07-20", // Día de la Independencia
+            "2025-08-07", // Batalla de Boyacá
+            "2025-08-18", // Asunción de la Virgen
+            "2025-10-13", // Día de la Raza
+            "2025-11-03", // Día de Todos los Santos
+            "2025-11-17", // Independencia de Cartagena
+            "2025-12-08", // Día de la Inmaculada Concepción
+            "2025-12-25"  // Navidad
+        ];
+
+        function isWeekend(date) {
+            const day = date.getDay();
+            return day === 0 || day === 6;
+        }
+
+        function isHoliday(date) {
+            const dateString = date.toISOString().slice(0, 10);
+            return holidays.includes(dateString);
+        }
+
+        function calculateTerm() {
+            const notificationDateInput = document.getElementById('notificationDate').value;
+            const businessDaysInput = parseInt(document.getElementById('businessDays').value);
+            const resultDiv = document.getElementById('result');
+            const expirationDateSpan = document.getElementById('expirationDate');
+            const holidayWarning = document.getElementById('holidayWarning');
+
+            if (!notificationDateInput || isNaN(businessDaysInput) || businessDaysInput <= 0) {
+                resultDiv.classList.add('hidden');
+                expirationDateSpan.textContent = "Error: Ingrese una fecha válida y días hábiles.";
+                resultDiv.classList.remove('hidden');
+                holidayWarning.classList.add('hidden');
+                return;
+            }
+
+            let currentDate = new Date(notificationDateInput);
+            currentDate.setDate(currentDate.getDate() + 1);
+
+            let daysCounted = 0;
+            while (daysCounted < businessDaysInput) {
+                while (isWeekend(currentDate) || isHoliday(currentDate)) {
+                    currentDate.setDate(currentDate.getDate() + 1);
+                }
+                daysCounted++;
+                if (daysCounted < businessDaysInput) {
+                    currentDate.setDate(currentDate.getDate() + 1);
+                }
+            }
+
+            while (isWeekend(currentDate) || isHoliday(currentDate)) {
+                currentDate.setDate(currentDate.getDate() + 1);
+            }
+
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            expirationDateSpan.textContent = currentDate.toLocaleDateString('es-ES', options);
+            resultDiv.classList.remove('hidden');
+            holidayWarning.classList.remove('hidden');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+            document.getElementById('notificationDate').value = `${year}-${month}-${day}`;
+        });
+    </script>
+</body>
+</html>
+```
