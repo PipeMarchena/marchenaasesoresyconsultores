@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marchena Asesores | Tu Solución Legal</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter (as fallback, Helvetica is preferred) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter (as fallback, Helvetica is preferred) --><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         background-color: #f8f8f8;
+        scroll-behavior: smooth; /* Para un desplazamiento suave a las anclas */
     }
 
     .bg-primary-dark {
@@ -51,18 +50,17 @@
         cursor: pointer;
         font-weight: 600;
     }
-</style> 
+</style>
 </head>
 <body class="antialiased text-gray-800">
 
-    <!-- Header Section -->
-  <header class="bg-primary-dark shadow-md py-4">
-    <div class="container mx-auto px-6 flex justify-between items-center">
+    <!-- Header Section --><header class="bg-primary-dark shadow-md py-4 sticky top-0 z-50"> <!-- Header fijo --><div class="container mx-auto px-6 flex justify-between items-center">
         <a href="#" class="text-2xl font-bold text-white">Marchena Asesores</a>
         <nav>
             <ul class="flex space-x-6">
                 <li><a href="#about" class="text-white hover:text-gray-300 font-medium">Quiénes Somos</a></li>
                 <li><a href="#services" class="text-white hover:text-gray-300 font-medium">Servicios</a></li>
+                <!-- ENLACE DE NAVEGACIÓN AÑADIDO --><li><a href="#alianzas" class="text-white hover:text-gray-300 font-medium">Alianzas</a></li>
                 <li><a href="#calculator" class="text-white hover:text-gray-300 font-medium">Calculadora de Términos</a></li>
                 <li>
                     <a href="#contact"
@@ -73,28 +71,22 @@
             </ul>
         </nav>
     </div>
-</header> 
+</header>
 
-    <!-- Hero Section (with Logo) -->
-  <section class="relative bg-primary-dark text-white py-24">
-    <!-- Background image container -->
-    <div class="absolute inset-0">
-        <img src="IMG_9464.jpg" alt="Fondo" class="w-full h-full object-cover opacity-20">
-        <div class="absolute inset-0 bg-primary-dark opacity-70"></div> <!-- Capa oscura encima -->
-    </div>
+    <!-- Hero Section (with Logo) --><section class="relative bg-primary-dark text-white py-24">
+    <!-- Background image container --><div class="absolute inset-0">
+        <img src="https://placehold.co/1920x1080/1A4266/FFFFFF?text=Marchena+Asesores" alt="Fondo" class="w-full h-full object-cover opacity-20" onerror="this.src='https://placehold.co/1920x1080/1A4266/FFFFFF?text=Fondo+Legal';">
+        <div class="absolute inset-0 bg-primary-dark opacity-70"></div> <!-- Capa oscura encima --></div>
 
-    <!-- Content over the background -->
-    <div class="relative container mx-auto px-6 text-center">
-        <!-- Logo Image -->
-        <img src="LOGO.JPG" alt="Logo Marchena Asesores" class="mx-auto mb-8 rounded-lg shadow-lg max-w-xs h-auto">
+    <!-- Content over the background --><div class="relative container mx-auto px-6 text-center">
+        <img src="https://placehold.co/320x320/FFFFFF/1A4266?text=Logo+Marchena+Asesores" alt="Logo Marchena Asesores" class="mx-auto mb-8 rounded-lg shadow-lg max-w-xs h-auto" onerror="this.src='https://placehold.co/320x320/FFFFFF/1A4266?text=Logo';">
         <h1 class="text-5xl font-extrabold mb-4 leading-tight">Expertos en Derecho, Su Confianza Nuestra Prioridad</h1>
         <p class="text-xl mb-8 max-w-2xl mx-auto">Ofrecemos asesoría legal integral y representación efectiva para individuos y empresas.</p>
         <a href="#contact" class="bg-white text-primary-dark px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 font-semibold text-lg">Contáctenos Hoy</a>
     </div>
 </section>
 
-    <!-- About Us Section (Quiénes Somos) -->
-    <section id="about" class="py-16 bg-white">
+    <!-- About Us Section (Quiénes Somos) --><section id="about" class="py-16 bg-white">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 class="text-4xl font-bold text-primary-dark mb-6">Quiénes Somos</h2>
@@ -106,14 +98,12 @@
                 </p>
             </div>
             <div class="rounded-xl overflow-hidden shadow-xl">
-                <!-- Image for "Oficina Marchena" from uploaded file: IMG_4077.jpg -->
-                <img src="IMG_4077.jpg" alt="Edificio de Oficina Marchena Asesores" class="w-full h-auto object-cover">
+                <img src="https://placehold.co/600x450/CCCCCC/FFFFFF?text=Nuestra+Oficina" alt="Edificio de Oficina Marchena Asesores" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x450/CCCCCC/FFFFFF?text=Oficina';">
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-     <section id="services" class="py-16 bg-white">
+    <!-- Services Section --><section id="services" class="py-16 bg-white">
         <div class="container mx-auto px-6 max-w-4xl">
             <h1 class="text-4xl font-bold text-primary-dark mb-10 text-center">Nuestros Servicios Detallados</h1>
 
@@ -130,6 +120,7 @@
                         <li>Manejo de relaciones colectivas</li>
                         <li>Asesorías en contratos con empresas internacionales</li>
                     </ul>
+                    <a href="#contact" class="inline-block mt-6 bg-primary-dark text-white px-6 py-2 rounded-lg shadow-md hover:bg-dark-blue-hover transition duration-300 font-semibold">Más Información</a>
                 </div>
 
                 <div class="p-8 rounded-xl shadow-lg bg-white">
@@ -137,6 +128,7 @@
                     <p class="text-lg text-gray-700 mb-4">Pública y privada.</p>
                     <h3 class="text-2xl font-semibold text-primary-dark mb-2">Ministerio</h3>
                     <p class="text-lg text-gray-700">Las gestiones necesarias que se tengan que llevar a cabo frente al Ministerio de Trabajo.</p>
+                    <a href="#contact" class="inline-block mt-6 bg-primary-dark text-white px-6 py-2 rounded-lg shadow-md hover:bg-dark-blue-hover transition duration-300 font-semibold">Más Información</a>
                 </div>
 
                 <div class="p-8 rounded-xl shadow-lg bg-white">
@@ -147,6 +139,7 @@
                         <li>Capacitaciones</li>
                         <li>Visitas domiciliarias</li>
                     </ul>
+                    <a href="#contact" class="inline-block mt-6 bg-primary-dark text-white px-6 py-2 rounded-lg shadow-md hover:bg-dark-blue-hover transition duration-300 font-semibold">Más Información</a>
                 </div>
 
                 <div class="p-8 rounded-xl shadow-lg bg-white">
@@ -156,6 +149,7 @@
                         <li>SG-CALIDAD</li>
                         <li>Auditorías internas</li>
                     </ul>
+                    <a href="#contact" class="inline-block mt-6 bg-primary-dark text-white px-6 py-2 rounded-lg shadow-md hover:bg-dark-blue-hover transition duration-300 font-semibold">Más Información</a>
                 </div>
 
                 <div class="p-8 rounded-xl shadow-lg bg-white">
@@ -168,12 +162,55 @@
                         <li>Derecho Civil</li>
                     </ul>
                     <p class="text-lg text-gray-700 mt-4">Estamos comprometidos en brindar a nuestros clientes un servicio transversal, diversificado y humano, basado en la protección a nuestros clientes de los riesgos jurídicos y las dificultades que la administración del talento humano implican.</p>
+                    <a href="#contact" class="inline-block mt-6 bg-primary-dark text-white px-6 py-2 rounded-lg shadow-md hover:bg-dark-blue-hover transition duration-300 font-semibold">Más Información</a>
                 </div>
             </div>
         </div>
-    </section> 
-    <!-- Term Calculator Section -->
-    <section id="calculator" class="py-16 bg-primary-dark text-white">
+    </section>
+
+    <section id="alianzas" class="py-16 bg-gray-50"> <!-- Fondo ligeramente gris para diferenciar --><div class="container mx-auto px-6 max-w-4xl">
+            <h1 class="text-4xl font-bold text-primary-dark mb-10 text-center">Nuestras Alianzas</h1>
+            
+            <div class="p-8 rounded-xl shadow-lg bg-white">
+                <h2 class="text-3xl font-semibold text-primary-dark mb-4">En alianza con Jaime Daza Abogados</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    Ampliamos nuestro portafolio para ofrecer servicios especializados, incluyendo:
+                </p>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 ml-4">
+                    <!-- SERVICIOS ADICIONALES AÑADIDOS --><li>Gobierno corporativo</li>
+                    <li>Propiedad intelectual</li>
+                    <li>Público</li>
+                    <li>Fusiones y adquisiciones</li>
+                    <li>Protección al consumidor</li>
+                    <li>Competencia y antimonopolio</li>
+                    <li>Inmobiliaria: asesoría en la venta de inmuebles, revisión contractual de contratos de promesa de compraventa, estudios de títulos y saneamiento de propiedades.</li>
+                    <li>Creación de contratos de corretaje.</li>
+                </ul>
+
+                <div class="mt-6 flex flex-wrap gap-4 items-center">
+                    <!-- Logo de Instagram y enlace --><a href="https://www.instagram.com/jdabogadosco/" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center space-x-2 text-lg text-primary-dark font-semibold hover:text-blue-800 transition duration-300">
+                        <!-- Icono SVG de Instagram --><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.227-1.668 4.77-4.919 4.919-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.251-.149-4.771-1.691-4.919-4.919-.058-1.265-.07-1.646-.07-4.85s.012-3.584.07-4.85C2.39 3.93 3.91 2.38 7.15.232 8.416.175 8.796.163 12 .163m0-2.02c-3.264 0-3.66.014-4.944.072C2.69 0.301.233 2.69.072 7.056.014 8.34 0 8.736 0 12s.014 3.66.072 4.944c.161 4.366 2.618 6.824 7.056 6.984 1.284.058 1.68.072 4.944.072s3.66-.014 4.944-.072c4.438-.16 6.895-2.618 7.056-7.056.058-1.284.072-1.68.072-4.944s-.014-3.66-.072-4.944C23.77.301 21.314.072 16.944.014 15.66 0 15.264 0 12 0m0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324M12 16.2a4.2 4.2 0 1 1 0-8.4 4.2 4.2 0 0 1 0 8.4m6.406-11.845a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0" clip-rule="evenodd"/>
+                        </svg>
+                        <span>@jdabogadosco</span>
+                    </a>
+
+                    <!-- Placeholder para Logo de la página web (cuando exista) --><a href="https://www.ejemplowebjaimedaza.com" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center space-x-2 text-lg text-primary-dark font-semibold hover:text-blue-800 transition duration-300">
+                        <!-- Icono SVG genérico para web (puedes reemplazarlo por un logo real) --><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2.00003C6.486 2.00003 2 6.48603 2 12.00003C2 17.514 6.486 22.00003 12 22.00003C17.514 22.00003 22 17.514 22 12.00003C22 6.48603 17.514 2.00003 12 2.00003ZM4.062 13.00003L7.00001 13.00003C7.55301 13.00003 8.00001 12.553 8.00001 12.00003C8.00001 11.447 7.55301 10.9999 7.00001 10.9999L4.062 10.9999C4.02001 10.686 4.00001 10.347 4.00001 10.00003C4.00001 9.38003 4.103 8.78403 4.293 8.21403L7.00001 8.21403C7.55301 8.21403 8.00001 7.76703 8.00001 7.21403C8.00001 6.66103 7.55301 6.21403 7.00001 6.21403L4.293 6.21403C4.542 5.34203 4.997 4.54403 5.626 3.88103C6.549 3.01803 7.712 2.45703 9.00001 2.21903L9.00001 5.00003C9.00001 5.55303 9.44701 6.00003 10.00001 6.00003C10.553 6.00003 11.00001 5.55303 11.00001 5.00003L11.00001 2.15503C11.328 2.04603 11.66 2.00003 12 2.00003C12.34 2.00003 12.672 2.04603 13 2.15503L13 5.00003C13 5.55303 13.447 6.00003 14 6.00003C14.553 6.00003 15 5.55303 15 5.00003L15 2.21903C16.288 2.45703 17.451 3.01803 18.374 3.88103C19.003 4.54403 19.458 5.34203 19.707 6.21403L17 6.21403C16.447 6.21403 16 6.66103 16 7.21403C16 7.76703 16.447 8.21403 17 8.21403L19.707 8.21403C19.897 8.78403 20 9.38003 20 10.00003C20 10.347 19.98 10.686 19.938 10.9999L17 10.9999C16.447 10.9999 16 11.447 16 12.00003C16 12.553 16.447 13.00003 17 13.00003L19.938 13.00003C19.98 13.314 20 13.653 20 14.00003C20 14.62003 19.897 15.21603 19.707 15.78603L17 15.78603C16.447 15.78603 16 16.23303 16 16.78603C16 17.33903 16.447 17.78603 17 17.78603L19.707 17.78603C19.458 18.65803 19.003 19.45603 18.374 20.11903C17.451 20.78203 16.288 21.34303 15 21.58103L15 18.9999C15 18.4469 14.553 17.9999 14 17.9999C13.447 17.9999 13 18.4469 13 18.9999L13 21.845C12.672 21.954 12.34 22.00003 12 22.00003C11.66 22.00003 11.328 21.954 11 21.845L11 18.9999C11 18.4469 10.553 17.9999 10 17.9999C9.44701 17.9999 9.00001 18.4469 9.00001 18.9999L9.00001 21.58103C7.712 21.34303 6.549 20.78203 5.626 20.11903C4.997 19.45603 4.542 18.65803 4.293 17.78603L7.00001 17.78603C7.55301 17.78603 8.00001 17.33903 8.00001 16.78603C8.00001 16.23303 7.55301 15.78603 7.00001 15.78603L4.293 15.78603C4.103 15.21603 4.00001 14.62003 4.00001 14.00003C4.00001 13.653 4.02001 13.314 4.062 13.00003Z"/>
+                        </svg>
+                        <span>Sitio Web Jaime Daza Abogados</span>
+                    </a>
+                </div>
+
+                <!-- Botón de Más Información para la alianza --><a href="#contact" class="inline-block mt-6 bg-primary-dark text-white px-6 py-2 rounded-lg shadow-md hover:bg-dark-blue-hover transition duration-300 font-semibold">Más Información sobre Alianzas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Term Calculator Section --><section id="calculator" class="py-16 bg-primary-dark text-white">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl font-bold mb-10">Calculadora de Términos Legales</h2>
             <div class="bg-white p-8 rounded-xl shadow-lg max-w-xl mx-auto text-gray-800">
@@ -202,26 +239,28 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-white">
+    <!-- Contact Section --><section id="contact" class="py-16 bg-white">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl font-bold text-primary-dark mb-10">Contáctenos</h2>
             <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
                 Estamos aquí para ayudarle. Llene el formulario a continuación o contáctenos directamente.
             </p>
             <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-                <form action="mailto:danielmarchenaa@gmail.com" method="post" enctype="text/plain">
+                
+                <form action="mailto:gerencia@marchena.com?cc=danielmarchenaa@gmail.com&subject=Consulta%20desde%20el%20sitio%20web%20Marchena%20Asesores" 
+                      method="post" 
+                      enctype="text/plain">
                     <div class="mb-6 text-left">
                         <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
-                        <input type="text" id="name" name="name" class="w-full p-3 rounded-md border border-gray-300 focus:ring-primary-dark focus:border-primary-dark" placeholder="Su Nombre Completo">
+                        <input type="text" id="name" name="Nombre" class="w-full p-3 rounded-md border border-gray-300 focus:ring-primary-dark focus:border-primary-dark" placeholder="Su Nombre Completo">
                     </div>
                     <div class="mb-6 text-left">
-                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" class="w-full p-3 rounded-md border border-gray-300 focus:ring-primary-dark focus:border-primary-dark" placeholder="su.email@ejemplo.com">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico (para responderle):</label>
+                        <input type="email" id="email" name="Email_de_Respuesta" class="w-full p-3 rounded-md border border-gray-300 focus:ring-primary-dark focus:border-primary-dark" placeholder="su.email@ejemplo.com">
                     </div>
                     <div class="mb-6 text-left">
                         <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
-                        <textarea id="message" name="message" rows="5" class="w-full p-3 rounded-md border border-gray-300 focus:ring-primary-dark focus:border-primary-dark" placeholder="Describa su consulta..."></textarea>
+                        <textarea id="message" name="Mensaje" rows="5" class="w-full p-3 rounded-md border border-gray-300 focus:ring-primary-dark focus:border-primary-dark" placeholder="Describa su consulta..."></textarea>
                     </div>
                     <button type="submit" class="w-full bg-primary-dark text-white py-3 rounded-lg hover:bg-dark-blue-hover transition duration-300 font-semibold">Enviar Mensaje</button>
                 </form>
@@ -234,8 +273,7 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-8">
+    <!-- Footer Section --><footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-6 text-center">
             <p>&copy; 2025 Marchena Asesores. Todos los derechos reservados.</p>
             <div class="flex justify-center space-x-4 mt-4">
@@ -250,6 +288,7 @@
 
         // Define Colombian public holidays (YYYY-MM-DD format)
         // This list should be updated annually and comprehensively for production use.
+        // Lista para 2025
         const holidays = [
             "2025-01-01", // Año Nuevo
             "2025-01-06", // Día de Reyes Magos
@@ -272,11 +311,15 @@
 
         function isWeekend(date) {
             const day = date.getDay();
+            // 0 = Domingo, 6 = Sábado
             return day === 0 || day === 6;
         }
 
         function isHoliday(date) {
-            const dateString = date.toISOString().slice(0, 10);
+            // Ajustar la zona horaria para evitar errores de un día
+            const offset = date.getTimezoneOffset() * 60000;
+            const adjustedDate = new Date(date.getTime() - offset);
+            const dateString = adjustedDate.toISOString().slice(0, 10);
             return holidays.includes(dateString);
         }
 
@@ -295,31 +338,44 @@
                 return;
             }
 
-            let currentDate = new Date(notificationDateInput);
-            currentDate.setDate(currentDate.getDate() + 1);
+            // Crear la fecha en UTC para evitar problemas de zona horaria
+            const parts = notificationDateInput.split('-');
+            let currentDate = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2]));
+
+            // Iniciar conteo al día SIGUIENTE de la notificación
+            currentDate.setUTCDate(currentDate.getUTCDate() + 1);
 
             let daysCounted = 0;
             while (daysCounted < businessDaysInput) {
+                // Saltar fines de semana y festivos
                 while (isWeekend(currentDate) || isHoliday(currentDate)) {
-                    currentDate.setDate(currentDate.getDate() + 1);
+                    currentDate.setUTCDate(currentDate.getUTCDate() + 1);
                 }
+                
+                // Si el día es hábil, se cuenta
                 daysCounted++;
+                
+                // Si aún no hemos terminado, avanzamos al siguiente día para el próximo ciclo
                 if (daysCounted < businessDaysInput) {
-                    currentDate.setDate(currentDate.getDate() + 1);
+                    currentDate.setUTCDate(currentDate.getUTCDate() + 1);
                 }
             }
-
+            
+            // Es posible que el último día contado caiga en un festivo o fin de semana
+            // (aunque el bucle anterior debería manejarlo).
+            // Esta comprobación final asegura que la fecha de vencimiento sea hábil.
             while (isWeekend(currentDate) || isHoliday(currentDate)) {
-                currentDate.setDate(currentDate.getDate() + 1);
+                 currentDate.setUTCDate(currentDate.getUTCDate() + 1);
             }
 
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
             expirationDateSpan.textContent = currentDate.toLocaleDateString('es-ES', options);
             resultDiv.classList.remove('hidden');
             holidayWarning.classList.remove('hidden');
         }
 
         document.addEventListener('DOMContentLoaded', () => {
+            // Poner la fecha de hoy por defecto en la calculadora
             const today = new Date();
             const year = today.getFullYear();
             const month = String(today.getMonth() + 1).padStart(2, '0');
@@ -329,4 +385,3 @@
     </script>
 </body>
 </html>
-```
