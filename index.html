@@ -10,9 +10,11 @@
             theme: {
                 extend: {
                     colors: {
-                        'primary-dark': '#1A4266',
+                        // CAMBIO REALIZADO AQUÍ: Azul mucho más oscuro y serio (#0B1829)
+                        'primary-dark': '#0B1829',
                         'gold': '#D4AF37', 
-                        'dark-blue-hover': '#143351',
+                        // CAMBIO REALIZADO AQUÍ: Ajuste del hover para el nuevo azul oscuro
+                        'dark-blue-hover': '#060D17',
                     },
                     fontFamily: {
                         // Forzamos Helvetica Bold como fuente principal
@@ -108,16 +110,16 @@
       />
     </div>
 
-    <!-- Título -->
-    <h1 class="text-5xl lg:text-7xl mb-6 leading-tight capitalize">
-      Expertos en Derecho, su confianza, nuestra prioridad<br>
-      <span class="text-gold">y compromiso</span>
-    </h1>
+<!-- Título -->
+<h1 class="text-4xl lg:text-6xl mb-6 leading-tight capitalize">
+  Expertos en Derecho, su confianza, nuestra prioridad<br>
+  <span class="text-gold">y compromiso</span>
+</h1>
 
-    <!-- Subtítulo -->
-    <p class="text-xl mb-12 max-w-2xl mx-auto text-slate-300 tracking-wide">
-      Liderazgo legal con más de 10 años de trayectoria protegiendo los intereses de su organización.
-    </p>
+<!-- Subtítulo -->
+<p class="text-lg mb-12 max-w-2xl mx-auto text-slate-300 tracking-wide">
+  Liderazgo legal con más de 10 años de trayectoria protegiendo los intereses de su organización.
+</p> 
 
     <!-- CTA -->
     <a 
@@ -237,7 +239,7 @@
     </p>
   </div>
   <div class="flex justify-center gap-24 flex-wrap">
-               
+                
     <!-- Cliente 1 -->
     <div class="flex flex-col items-center space-y-3 opacity-70 hover:opacity-100 transition duration-300">
       <img
