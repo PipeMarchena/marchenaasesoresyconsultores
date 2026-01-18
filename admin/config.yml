@@ -1,13 +1,1 @@
-backend:
-  name: git-gateway
-  branch: main
 
-collections:
-  - name: news
-    label: Noticias
-    folder: news
-    create: true
-    fields:
-      - { name: title, label: Título }
-      - { name: image, label: Imagen, widget: image }
-      - { name: body, label: Contenido, widget: markdown }
